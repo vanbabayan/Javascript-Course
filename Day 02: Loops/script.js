@@ -52,4 +52,15 @@ for (begin; condition; step) {
 //But we can force the exit at any time using the special break directive.
 //For example, the loop below asks the user for a series of numbers, “breaking” when no number is entered:
 
+let sum = 0;
 
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Sum: ' + sum );
