@@ -63,3 +63,47 @@ showMessage2(); // Hello, John
   
   showMessage4("Ann"); // Ann: no text given
 
+
+
+  // function expression
+
+  let name = function(parameter1, parameter2, ...parameterN){
+      //  body
+  }
+
+  let sayHi = function(name){
+      alert("Hello, " + name);
+  }
+
+  sayHi('vanik')
+  
+  // Arrow functions
+
+  let name = (parameters) => {
+    // body
+  }
+
+
+
+  let sum = (a, b) => a + b;
+
+/* This arrow function is a shorter form of:
+
+let sum = function(a, b) {
+  return a + b;
+};
+*/
+
+alert( sum(1, 2) ); // 3
+
+
+let age = prompt("What is your age?", 18);
+
+let welcome = (age < 18) ?
+  () => alert('Hello!') :
+  () => alert("Greetings!");
+
+welcome();
+
+
+
